@@ -1,0 +1,45 @@
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+
+export default function ANGNWebsite() {
+  return (
+    <div className="container mx-auto p-6">
+      <header className="text-center text-3xl font-bold mb-6">ANGN - Marketing & Sales Institute</header>
+      
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card>
+          <CardContent>
+            <img src="/default-marketing-image.jpg" alt="Marketing" className="w-full rounded-lg" />
+            <h2 className="text-xl font-semibold mt-4">Boost Your Sales Globally</h2>
+            <p className="text-gray-600">Leverage our professional marketing strategies to expand your product reach across multiple countries.</p>
+            <Button className="mt-4">Learn More</Button>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent>
+            <h2 className="text-xl font-semibold">Blog & Community</h2>
+            <p className="text-gray-600">Share your marketing insights, promote products, and engage with followers in our blogging section.</p>
+            <Button className="mt-4">Start Blogging</Button>
+          </CardContent>
+        </Card>
+      </section>
+      
+      <section className="mt-10 text-center">
+        <h2 className="text-xl font-semibold">Follow Us & Stay Updated</h2>
+        <div className="flex justify-center gap-4 mt-2">
+          <FaFacebook size={30} />
+          <FaTwitter size={30} />
+          <FaInstagram size={30} />
+        </div>
+      </section>
+
+      <footer className="mt-10 p-4 bg-gray-800 text-white text-center rounded-lg">
+        <h3 className="text-lg font-semibold">Contact Information</h3>
+        <p>Email: ayeshanisarghulamnabi7@gmail.com</p>
+        <p>Phone: +92 3135051822 | +92 3345769700 | +966 596549025</p>
+      </footer>
+    </div>
+  );
+}
